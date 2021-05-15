@@ -23,7 +23,7 @@ const logout = require("./routes/auth/logout");
 const index = require("./routes/index");
 const newMeeting = require("./routes/newMeeting");
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect("MONGO_URI=mongodb+srv://test:test@cluster0.l5eky.mongodb.net/users?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
